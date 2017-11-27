@@ -1,62 +1,29 @@
 body {
-    min-width: 500px;
-    margin: 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
 }
 
-.clearfix::after {
-    display: table;
+.clearfix:after {
+    display: block;
     content: "";
     clear: both;
 }
-
-.layout-positioner {
-    width: 800px;
-    margin: 0 auto;
+h1, h2 {
+  margin: 0px 0px 0px 10px;
+  padding: 10px;
+  color: red;
 }
-
-.layout-positioner::after {
-    display: table;
-    content: "";
-    clear: both;
+p {
+  margin-left: 10px;
 }
-
 .header {
     margin-bottom: 10px;
     color: white;
     background: #34495e;
-}
-
-.header .layout-column {
-    min-height: 50px;
-}
-
-.header .layout-column-1 {
-    float: left;
-    width: 280px;
-}
-
-.header .layout-column-2 {
-    float: right;
-    width: 130px;
-}
-
-.features {
-    margin-bottom: 10px;
-}
-
-.features .layout-column {
-    float: left;
-    margin-right: 20px;
-    width: 230px;
-    min-height: 100px;
-    background: rgba(236, 240, 241, 0.9);
-}
-
-.features .layout-column:last-child {
-    margin-right: 0;
 }
 
 .footer {
@@ -65,23 +32,9 @@ body {
     background: #34495e;
 }
 
-/* Стили содержания */
-.hidden {
-    display: block;
-}
-
-.logo {
-    padding: 10px;
-}
-
-.logo p {
-    margin: 0;
-}
-
 .menu {
-    margin: 0;
-    padding: 10px;
-    list-style: none;
+  margin: 0px 0px 0px 10px;
+  padding: 5px;
 }
 
 .menu li {
@@ -90,13 +43,12 @@ body {
     text-align: center;
     background: #2c3e50;
     border-radius: 5px;
+    display: inline-block;
 }
-
-.feature {
-    padding: 10px;
-    text-align: center;
+.content {
+  background-color: pink;
 }
-
-.footer-logo {
-    padding: 10px;
+article:first-child {
+  font-style: italic;
+  font-size: 1.5em;
 }

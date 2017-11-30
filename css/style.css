@@ -10,7 +10,10 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
 }
-
+.link-a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 .clearfix:after {
     display: block;
     content: "";

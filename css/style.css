@@ -40,8 +40,9 @@ p {
 }
 
 .menu-bar {
-  margin: 130px 20px 0px 20px;
-  height: 100%
+  position: absolute;
+  top: 190px;
+  margin: 0px 20px 0px 20px;
 }
 
 ul.site-navigation {
@@ -54,17 +55,20 @@ ul.site-navigation li {
     height: 40px;
     float:left;
     width:auto;
+    border-right: 1px solid white;
 }
 ul.site-navigation li a {
   display: block;
   color: #fff;
   text-decoration: none;
   padding: 0 10px;
-  border-right: 1px solid;
-    transition: all .5s;
+  transition: all .5s;
 }
 ul.site-navigation li a:hover {
   background-color: #d3d2d3;
+}
+ul.site-navigation li:last-child {
+  border-right: none;
 }
 .content {
   background: #d3d2d3;
@@ -99,11 +103,12 @@ img.zoom:hover {
 .bird-img {
   float: left;
   margin-left: 20px;
+  margin-right: 10px;
 }
 .float-p {
-  float: right;
   margin-right: 20px;
-  width: 700px;
+  margin-left: 20px;
+  width: auto;
 }
 .footer {
     margin-top: 10px;

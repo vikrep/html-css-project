@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
     max-width: 1000px;
     margin-left: auto;
@@ -12,43 +16,116 @@ body {
     content: "";
     clear: both;
 }
+
 h1, h2 {
   margin: 0px 0px 0px 10px;
   padding: 10px;
-  color: red;
+  text-transform: uppercase;
+  color: #34495e;
+}
+header h1 {
+  text-align: center;
+  font-size: 3.0em;
 }
 p {
-  margin-left: 10px;
+  text-align: justify;
 }
 .header {
+    background: url(../img/header-img.jpg);
     margin-bottom: 10px;
-    color: white;
-    background: #34495e;
+    height: 247px;
 }
 
-.footer {
-    min-height: 50px;
-    color: white;
-    background: #34495e;
+.menu-bar {
+  margin: 130px 20px 0px 20px;
+  height: 100%
 }
 
-.menu {
-  margin: 0px 0px 0px 10px;
-  padding: 5px;
+ul.site-navigation {
+  height: 40px;
+  background-color: #34495e;
+  list-style-type: none;
 }
-
-.menu li {
-    margin-bottom: 5px;
-    padding: 5px;
-    text-align: center;
-    background: #2c3e50;
-    border-radius: 5px;
-    display: inline-block;
+ul.site-navigation li {
+    line-height: 40px;
+    height: 40px;
+    float:left;
+    width:auto;
+}
+ul.site-navigation li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  border-right: 1px solid;
+    transition: all .5s;
+}
+ul.site-navigation li a:hover {
+  background-color: #d3d2d3;
 }
 .content {
-  background-color: pink;
+  background: #d3d2d3;
 }
-.first h2:first-child {
+.landscape h2:first-child {
   font-style: italic;
-  font-size: 2.5em;
+  color: blue;
+}
+img.zoom {
+  -moz-user-select: none; -user-select: none;
+}
+img.zoom:hover {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  border: solid rgba(210,210,210,.4);
+  border-width: 100vh 100vw;
+  cursor: zoom-out;
+}
+:not(:active) > img.zoom:not(:hover), img.zoom:active {
+  pointer-events: none;
+}
+.landscape-img,
+.flower-img,
+.bird-img {
+  float: left;
+  margin-left: 20px;
+}
+.float-p {
+  float: right;
+  margin-right: 20px;
+  width: 700px;
+}
+.footer {
+    margin-top: 10px;
+    min-height: 50px;
+    background: #34495e;
+}
+.footer p {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+.footer a {
+    color: #02afff;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+hr {
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }

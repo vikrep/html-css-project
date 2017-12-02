@@ -38,18 +38,21 @@ p {
 .header {
     background: url(../img/header-img.jpg);
     margin-bottom: 10px;
-    height: 247px;
+    min-height: 247px;
+    position: relative;
 }
+/* * {
+  border: 1px solid red;
+} */
 
 .menu-bar {
   position: absolute;
-  top: 190px;
+  bottom: 0px;
   margin: 0px 20px 0px 20px;
 }
 
 ul.site-navigation {
   height: 40px;
-  background-color: #34495e;
   list-style-type: none;
 }
 ul.site-navigation li {
@@ -58,6 +61,7 @@ ul.site-navigation li {
     float:left;
     width:auto;
     border-right: 1px solid white;
+    background-color: #34495e;
 }
 ul.site-navigation li a {
   display: block;

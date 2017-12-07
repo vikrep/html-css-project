@@ -78,13 +78,6 @@ ul.site-navigation li a:hover {
 ul.site-navigation li:last-child {
   border-right: none;
 }
-.content {
-  width: 75%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
-}
 .landscape h2:first-child {
   font-style: italic;
   color: blue;
@@ -142,13 +135,23 @@ article img {
 .sidebar {
   border-radius: 5px;
   background-color: #d3d2d3;;
-  width: 24%;
   margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 .content-sidebar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+.box {
+  width: 100%;
+}
+
 .landscape,
 .flower,
 .bird,
@@ -160,4 +163,12 @@ article img {
   background: #d3d2d3;
   margin-bottom: 5px;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 1000px) {
+.content {
+  width: 75%;
+}
+.sidebar {
+  width: 24%;
+}
 }
